@@ -1,69 +1,58 @@
 # CareerConnect – Jobs and Internship Management System
 
-## About the Project
+## 1. Project Overview
 
-CareerConnect is a web-based Jobs and Internship Management System developed using HTML, CSS, and JavaScript. The main purpose of this project is to help users explore job and internship opportunities, search for suitable positions, filter opportunities according to job type and work mode, save interesting jobs, and track their applications.
+CareerConnect is a frontend web application developed using HTML, CSS, and JavaScript. It helps students explore sample job and internship opportunities, search by keywords, filter listings, save jobs, and track application statuses.
 
-The project provides a simple and user-friendly interface for students and job seekers who want to organize their job search in one place.
+## 2. Technologies Used
 
-## Features
+- HTML5 for page structure and semantic content.
+- CSS3 for styling and responsive layouts.
+- JavaScript for searching, filtering, saved jobs, and application tracking.
+- Browser LocalStorage for retaining saved jobs and application information.
+- GitHub Pages for hosting the website.
 
-- **Job Listings:** Displays different job and internship opportunities.
-- **Search Functionality:** Search opportunities by job title, company, or relevant keywords.
-- **Job Type Filter:** Filter opportunities by internship or full-time employment.
-- **Work Mode Filter:** Filter jobs by remote, hybrid, or on-site work mode.
-- **Save Jobs:** Save interesting opportunities for later reference.
-- **Application Tracker:** Track application status, including Interested and Interview.
-- **Local Storage:** Keeps saved jobs and application information available after refreshing the browser.
-- **Responsive Interface:** Provides a clean layout for browsing opportunities.
-- **Search and Filter Combination:** Apply multiple filters together to find relevant opportunities.
+## 3. Main Features
 
-## Technologies Used
+- Search sample opportunities by title, company, location, and skills.
+- Filter opportunities by job type and work mode.
+- Save and remove saved opportunities.
+- Add opportunities to the application tracker.
+- Update application statuses.
+- Preserve saved jobs and application details across browser refreshes using LocalStorage.
 
-- HTML5 – Structure of the website
-- CSS3 – Styling, layout, and visual design
-- JavaScript – Search, filtering, saved jobs, and application tracking
-- Browser Local Storage – Persistent storage of saved jobs and application data
+## 4. Security Considerations
 
-## Project Structure
+This project is a frontend demonstration and does not collect passwords, payment details, or confidential personal information. It does not contain a backend authentication system or database. LocalStorage is browser storage and must not be treated as secure storage for sensitive information.
 
-```text
-CareerConnect/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+Input values and stored data should be validated before they are used. The application should handle invalid or unavailable LocalStorage data gracefully. No API keys, passwords, or other secrets should be committed to the public repository.
 
-## How to Run the Project
+The current job listings are sample data. Users should verify opportunities with the relevant employers before applying.
 
-1. Download or clone this repository.
-2. Open the project folder in Visual Studio Code.
-3. Open `index.html` in a browser, or run it using the Live Server extension.
-4. Explore the available opportunities.
-5. Try the search box, job type filter, work mode filter, saved jobs, and application tracker.
+## 5. Deployment and Automation
 
-## Testing and Quality Assurance
+The project is hosted using GitHub Pages. When Pages is configured to publish from the `main` branch and the repository root, committed changes pushed to that branch can be published automatically by GitHub Pages. The deployment status can be checked in the repository's Actions tab or Settings → Pages.
 
-The project was tested manually using different search terms, job filters, saved-job actions, and application-tracking operations. Browser-console regression checks were also performed for important search and filtering scenarios.
+This project uses GitHub Pages publishing rather than a custom CI/CD pipeline. Deployment success should be verified by opening the live website and testing its main features after changes are published.
 
-During testing, a search issue was identified where searching for Java could also return JavaScript-related results. The search-matching logic was corrected, and the relevant regression checks passed.
+## 6. Monitoring and Troubleshooting
 
-Saved jobs and application status persistence were checked by refreshing the browser. Lighthouse was also used to review performance, accessibility, best practices, and SEO.
+After deployment, check the GitHub Pages build status, open the live website, and inspect the browser Developer Tools Console for JavaScript errors. Test search, filters, saved jobs, application status changes, and persistence after refreshing the page.
 
-## Limitations
+GitHub Pages does not provide application-specific backend logs for this frontend-only project. Browser Console checks and GitHub deployment status are the monitoring methods used for this project.
 
-This is a front-end project. Job listings are sample data stored in JavaScript, and the application uses browser Local Storage. It does not currently include a backend database, user authentication, or a live job-posting API.
+## 7. Testing
 
-## Future Improvements
+Manual functional testing should cover keyword search, individual filters, combined filters, saving and removing jobs, updating application statuses, and persistence after a page refresh. Record the expected result, actual result, pass/fail status, and screenshot evidence for each test.
 
-- Add user registration and login.
-- Connect a backend and database.
-- Integrate a live job and internship API.
-- Add resume upload and application submission.
-- Improve application analytics and notifications.
+Formal automated unit tests, server-side monitoring, and a security audit have not been implemented as part of the current version.
 
-## Author
+## 8. Limitations and Future Improvements
 
-Developed as a learning project to practice front-end web development, JavaScript functionality, browser storage, debugging, and software testing.
+The application uses sample job listings and browser LocalStorage. It does not submit applications to real employers and does not include user authentication, a backend database, live job APIs, or centralized monitoring. Future improvements may include a secure backend, authenticated user accounts, live job data, automated tests, and more comprehensive monitoring.
 
+## 9. Project Links
+
+GitHub Repository: https://github.com/Anamika-kumari31/CareerConnect
+
+Live Website: https://anamika-kumari31.github.io/CareerConnect/
